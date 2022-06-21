@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+                border: 2px solid black;
+                margin-top: 2%;
+            }
+            p{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Java Script Form Validation</h1>
+        <div>
+            <form name="form" onsubmit="return validate()" method="post"><br>
+                <label for="fname">Name*</label>
+                <input type="text" name="fname" id="fname" required><br>
+                <p>Please enter your name!</p>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address"required><br><br>
+                <label for="code">Zip code*</label>
+                <input type="number" name="code" id="code" required><br><br>
+                <label for="cselect">Country*</label>
+                <select name="country" id="country" required><br><br>
+                    <option value="select">Please Select..</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="usa">USA</option>
+                </select><br><br>
+                <label for="gender">Gender*</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label><br><br>
+                <label for="prefer">Preferences*</label>
+                <input type="checkbox" name="prefer" id="red">
+                <label for="red">Red</label>
+                <input type="checkbox" name="prefer" id="green">
+                <label for="green">Green</label>
+                <input type="checkbox" name="prefer" id="blue">
+                <label for="blue">Blue</label><br><br>
+                <label for="phone">Phone*</label>
+                <input type="number" name="number" id="number" required><br><br>
+                <label for="mail">Email*</label>
+                <input type="text" name="email" id="email" required><br><br>
+                <label for="password">Password(6-8 characters)*</label>
+                <input type="text" name="password" id="password" required><br><br>
+                <label for="verify">Verify Password*</label>
+                <input type="text" name="verify" id="verify" required><br><br>
+                <input type="submit" value="SEND">
+                <input type="submit" value="CLEAR">
+            </form><br>
+        </div>
+        <script>
+            function validate(){
+                var name=document.getElementById("fname").value;
+                var code=document.getElementById("code").value;
+                var n=document.getElementById("number").value;
+                var pw=document.getElementById("password").value;
+                var vp=document.getElementById("verify").value;
+                var e=document.getElementById("email").value;
+                if(name.match(/^[A-Za-z]+$/)){
+                if(code.length==6){
+                    if(n.length==10){
+                        if(e.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)){
+                            if(pw===vp){
+                                if(pw.length>=6||pw.length<=8){
+                                    alert("Registration Successful");
+                                    return true;
+                                }               
+                                else{
+                                    alert("Use 6-8 characters in passwords");
+                                    return false;
+                                }             
+                            }
+                            else{
+                                alert("Paswords do not match");
+                                return false;
+                            }
+                        }   
+                        else{
+                            alert("Enter valid email address");
+                            return false;
+                        }                                             
+                    }
+                    else{
+                        alert("Please enter 10 digit phone number");
+                        return false;
+                    }
+                }
+                else{
+                    alert("Please enter 6 digit zip code");
+                    return false;
+                }
+                }
+                else{
+                    alert("Enter valid name");
+                    return false;
+                }
+        }
+        </script>        
+    </body>
+</html>
