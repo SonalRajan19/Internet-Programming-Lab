@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.forms{
+    text-align: center;
+    border: solid 2px black;
+    background-color: grey;
+    color: rgb(41, 41, 229);
+    margin: 8% 30% 8% 30%;
+    font-size: xx-large;
+    padding: 20px 0px 20px 0px;
+}
+
+.submit{
+    color: grey;
+    background-color: rgb(41, 41, 229);
+    font-size: xx-large;
+}
+
+.heading{
+    display: inline;    
+    background-color: rgb(41, 41, 229);
+}
+
+.name{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: xxx-large;
+    color: black;
+}
+
+.sign{
+    background-color: rgb(41, 41, 229);
+    color: black;
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.sign:hover span{
+    color: black;
+    background-color: rgb(41, 41, 229);
+}
+
+.content{
+    display: flex;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-top: 20px;
+}
+
+.slider img{
+    width: 150px;
+    height: 200px;
+    margin: 15px;
+}
+
+.about{
+    width: 60%;
+    height: auto;
+    padding: 0px 30px 20px 30px;
+    background-color: white;
+    color: rgb(41, 41, 229);
+    margin-top: 20px;
+    border: solid 3px black;
+}
+
+.about h3{
+    font-size: x-large;
+    font-style:italic;
+}
+
+.about img{
+    width: 100px;
+    height: 150px;
+}
+
+table,th,tr,td{
+    padding: 20px;
+    border: solid 2px whitesmoke;
+    border-collapse: collapse;
+}
+
+iframe{
+    margin: 50% 0% 10% 15%;
+    width: 120%;
+    height: 240px;
+}
+
+.cregister{
+    padding: 20px 20px 60px 0px;
+    text-align: center;
+    color:aquamarine;
+    background-color: rgb(90, 73, 248);
+}
+
+.csubmit{
+    background-color:aquamarine;
+    color: rgb(90, 73, 248);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Connemora Central Library</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            h1{
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            background-color: rgb(41, 41, 229);
+            }
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            }
+            h3{
+                color: black;
+            }
+            table,th{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h1 class="name">Connemora Central Library</h1>
+            <button type="button" class="sign" onclick="window.location.href='login.html'">Sign Up / Login</button>
+        </div>
+        <div class="content">
+            <div class="slider">
+                <img src="" alt="" id="image">
+                <script type="text/javascript">
+                    let image=document.getElementById('image');
+                    let images=['2 States.jpg','The notebook.jpg','Harry potter.jpg','Treasure island.jpg','The time machine.jpg'];
+                    setInterval(function(){
+                        let random=Math.floor(Math.random()*5);
+                        image.src=images[random];
+                    },1000);
+                </script>
+            </div>
+            <div class="about">
+                <h3>Connemora Library</h3>
+                <p>The Connemara Public Library at Egmore in Chennai, Tamil Nadu, India, is one of the four National Depository 
+                    Libraries which receive a copy of all books, newspapers and periodicals published in India. 
+                    Established in 1896, the library is a repository of century-old publications, wherein lie some of the most 
+                    respected works and collections in the history of the country. It also serves as a depository library for the 
+                    United Nations.[citation needed] It is located in the Government Museum Complex on Pantheon Road, Egmore, which
+                     also houses the Government Museum and the National Art Gallery.</p>
+                     <table>
+                        <tr>
+                            <th style="width: 10%;">S.no</th>
+                            <th style="width: 30%;">Books</th>
+                            <th style="width: 30%;">Authors</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td><img src="2 States.jpg" alt="2 States"></td>
+                            <td>Chetan Bhagat</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td><img src="Adventures.jpg" alt="Adventures of Hckleberry Finn"></td>
+                            <td>Mark Twain</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td><img src="Alice.jpg" alt="Alice"></td>
+                            <td>Lewis Caroll</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><img src="Anne Frank.jpg" alt="Anne Frank"></td>
+                            <td>Anne Frank</td>
+                        </tr>
+                    </table>    
+                </div>            
+                <div class="logo">
+                    <a href="register.html" target="register"><img src="Connemora.jpg" alt="logo"></a>
+                    <iframe src="iframe.html" name="register"></iframe>                        
+                </div>
+            </div>
+    </body>
+</html>
