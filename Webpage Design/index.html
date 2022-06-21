@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet Programming Lab 2</title>
+        <style>
+            body{
+                background-image: url('bg.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+            }
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th,td{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Library Management System</h1>
+        <h2>Authentication</h2>
+        <form action="/action_page.php">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="password">Password</label><br>
+            <input type="text" id="pswd" name="pswd" value=""><br>
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="favcolor">Select your favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor" value=""><br><br>
+            <input type="submit" value="Submit">
+            <input type="Reset">
+        </form>
+        <h2>Genre</h2>
+        <ul>
+            <li><a href="https://www.google.com/search?q=fiction+books&sxsrf=APq-WBvRUKB1ofSs_LAdMS5Cv_NG89SC_w%3A1648360469706&ei=Ffw_YobeKv_f2roPr6K-2As&oq=fictions&gs_lcp=Cgdnd3Mtd2l6EAMYATIHCAAQsQMQQzIHCAAQsQMQQzIECAAQQzIHCAAQsQMQQzIECAAQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzoHCCMQ6gIQJzoECCMQJzoLCAAQgAQQsQMQgwE6BwguENQCEEM6BAguEENKBAhBGABKBAhGGABQtgFY0Q1g9xpoAXABeACAAYQBiAHDB5IBAzAuOJgBAKABAbABCsABAQ&sclient=gws-wiz">Fiction</a></li>
+            <li><a href="https://www.google.com/search?q=comedy+books&sxsrf=APq-WBvihlRSSAf2ZNlE2GlmL2QHlNb56w%3A1648360642727&ei=wvw_YsqNLPG1mge6oZCgDA&oq=comedy+books&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQkQIyBQgAEIAEMgUIABCRAjIFCAAQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CAgAEAcQChAeOgYIABAHEB46BQguEIAEOgQIABAeOgYIABAFEB46BAgAEAo6CggAEAcQBRAKEB46BAgAEA1KBAhBGABKBAhGGABQAFiSHGDEKGgDcAF4AIABgwGIAf8HkgEDMS44mAEAoAEBwAEB&sclient=gws-wiz">Comedies</a></li>
+            <li><a href="https://www.google.com/search?q=romantic+books&sxsrf=APq-WBtXAgqu3WwjGHRhS6vW99bRtPnNHQ%3A1648360666236&ei=2vw_Yt6MDt3iz7sPvPqW2AQ&ved=0ahUKEwje4eP_zeX2AhVd8XMBHTy9BUsQ4dUDCA4&uact=5&oq=romantic+books&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgUIABCRAjIFCAAQkQIyBwgAEIAEEAoyBQgAEJECMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQBxAeOgoIABCABBCHAhAUOgcIABCxAxANOgQIABANSgQIQRgASgQIRhgAUABYlA1gshJoAHABeACAAZsBiAG1B5IBAzAuOJgBAKABAcABAQ&sclient=gws-wiz">Romantics</a></li>
+            <li><a href="https://www.google.com/search?q=adventures+books&sxsrf=APq-WBvmEvEziEsccQ2QCkxnxsrWgGBhPQ%3A1648360683318&ei=6_w_YvODE-vC3LUPwNKCkAs&ved=0ahUKEwizpfaHzuX2AhVrIbcAHUCpALIQ4dUDCA4&uact=5&oq=adventures+books&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEAoyBggAEAcQHjIGCAAQBxAeMgQIABAKMgYIABAHEB4yBAgAEAoyBggAEAcQHjIECAAQCjIGCAAQBxAeMgQIABAKOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOg8ILhDUAhDIAxCwAxBDGAI6CAgAELEDEJECOgUIABCRAjoFCAAQgARKBAhBGABKBAhGGAFQ3hBYsx5gvx9oAnABeAGAAb8CiAGOCpIBBzMuNi4wLjGYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz">Adventures</a></li>
+            <li><a href="https://www.google.com/search?q=fantasy+books&sxsrf=APq-WBsW9yHqhKdoyCWbB9SIR61QnT33oQ%3A1648360704172&ei=AP0_Yun_CcDA3LUPzaOg8AM&ved=0ahUKEwjp_-6RzuX2AhVAILcAHc0RCD4Q4dUDCA4&uact=5&oq=fantasy+books&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEJECMgUIABCRAjIFCAAQkQIyBQgAEJECMgUIABCRAjIFCAAQgAQyBggAEAcQHjIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQsQMQDToECAAQDUoECEEYAEoECEYYAFAAWMUJYKgMaABwAXgAgAGHAYgBpQaSAQMwLjeYAQCgAQHAAQE&sclient=gws-wiz">Fantasy</a></li>
+            <li><a href="https://www.google.com/search?q=comics+books&sxsrf=APq-WBseTKGyaQ5aVeKGRsU4dqI9wwPwqg%3A1648360721181&ei=Ef0_YrXTCo6a4t4Pm_GtgAU&ved=0ahUKEwj1n_2ZzuX2AhUOjdgFHZt4C1AQ4dUDCA4&uact=5&oq=comics+books&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgoIABCABBCHAhAUMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAHEB4yBQgAEIAEOggIABAHEAoQHjoECAAQQzoFCC4QgAQ6BAgAEB46BggAEAUQHkoECEEYAEoECEYYAFAAWPcGYMgIaABwAXgAgAGjAYgB4AWSAQMwLjaYAQCgAQHAAQE&sclient=gws-wiz">Comics</a></li>
+        </ul>
+        <h2>Few books available in the library</h2><br>
+        <img src="2 States.jpg" width="200" height="200">
+        <img src="The time machine.jpg" width="200" height="200">
+        <img src="Alice.jpg" width="200" height="200">
+        <img src="Treasure island.jpg" width="200" height="200">
+        <img src="The notebook.jpg" width="200" height="200">
+        <img src="Dear girls.jpg" width="200" height="200">
+        <img src="Harry potter.jpg" width="200" height="200">
+        <img src="Menstrupedia.jpg" width="200" height="200">
+        <img src="Anne Frank.jpg" width="200" height="200">
+        <img src="Adventures.jpg" width="200" height="200">
+        <img src="The blue umbrella.jpg" width="200" height="200">
+        <img src="Girl in room 105.jpg" width="200" height="200">
+        <h2>Books Details</h2>
+        <table style="width:50%">
+            <tr>
+                <th>S.NO</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2 States</td>
+                <td>Chetan Bhagat</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>The notebook</td>
+                <td>Nicholas Spark</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harry Potter and the Philosopher's Stone</td>
+                <td>J K Rowling</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Dear Girls</td>
+                <td>Ali Wong</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Alice's Adventures in Wonderland</td>
+                <td>Lewis Carroll</td>
+            </tr>
+        </table>
+        <h2>Students Details</h2>
+        <table style="width:100%">
+            <tr>
+                <th>S.NO</th>
+                <th>Student Name</th>
+                <th>Department</th>
+                <th>Roll No</th>
+                <th>Book Borrowed</th>
+                <th>Issue date</th>
+                <th>Return date</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Sonal L R</th>
+                <th>CSE</th>
+                <th>19cse087</th>
+                <th>2 States</th>
+                <th>19/07/2021</th>
+                <th>21/08/2021</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Indhumathi K V</th>
+                <th>ECE</th>
+                <th>19ece072</th>
+                <th>Tinkle Magazine</th>
+                <th>15/03/2022</th>
+                <th>24/03/2022</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Jeya Roshini S</th>
+                <th>IT</th>
+                <th>19it032</th>
+                <th>Around the world in 80 days</th>
+                <th>12/08/2020</th>
+                <th>23/10/2020</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Varsha</th>
+                <th>Civil</th>
+                <th>19civ059</th>
+                <th>Treasure Island</th>
+                <th>Issue date</th>
+                <th>Return date</th>
+            </tr>
+        </table><br>
+        <audio controls autoplay>
+            <source src="Pudhiya Manidha.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio><br>
+        <video width="500" height="500" controls>
+            <source src="Tum Tum Tum.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>          
+    </body>
+</html>
