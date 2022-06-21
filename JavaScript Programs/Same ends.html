@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Javascript program to accept String
+        // starting with Vowel
+         
+        // Function to check if first character is vowel
+        function checkIfStartsWithVowels(str)
+        {
+         
+            if (!(str[0] == 'A' || str[0] == 'a'
+                  || str[0] == 'E' || str[0] == 'e'
+                  || str[0] == 'I' || str[0] == 'i'
+                  || str[0] == 'O' || str[0] == 'o'
+                  || str[0] == 'U' || str[0] == 'u'))
+                return 1;
+            else
+                return 0;
+        }
+         
+        // Function to check
+        function check(str)
+        {
+            if (checkIfStartsWithVowels(str))
+                document.write( str+" : Not Accepted<br>");
+            else
+                document.write(str+" : Accepted<br>");
+        }
+         
+        var str = "Classroom";
+        check(str);
+         
+        str = "Animal";
+        check(str);
+         
+         
+        // This code is contributed by SoumikMondal
+        </script>
+</html>

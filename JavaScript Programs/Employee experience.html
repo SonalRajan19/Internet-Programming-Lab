@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    </head>
+        <script>
+            var customerName = prompt("Please enter the data you joined in the format mm/dd/yyyy", "<date goes here>");
+            function myFunction() {
+                document.getElementById("frm1").submit();
+            }
+        </script>
+        <script type = "text/javascript" >
+        // JavaScript program to illustrate
+        // calculation of no. of days between two date
+        // To set two dates to two variables
+            var date1 = new Date(customerName);
+            var date2 = new Date("04/26/2022");
+        
+            // To calculate the time difference of two dates
+            var Difference_In_Time = date2.getTime() - date1.getTime();
+            
+            // To calculate the no. of days between two dates
+            var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+            var daydiff = (Difference_In_Time/ 31536000000).toFixed(0);  
+            
+            //To display the final no. of days (result)
+            document.write(" The experience of the employee is: " + Difference_In_Days + " days");
+            document.write(" that is " + daydiff + " years");
+        </script>
+    </head>
+    <body> 
+    </body>
+</html>

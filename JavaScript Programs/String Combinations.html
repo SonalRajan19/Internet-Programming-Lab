@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strings</title>
+    </head>
+    <body>
+            <script>
+            function combinator (s) 
+            {
+                list_of_strings =[];
+                for(i=0;i<s.length;i++) 
+                {
+                    for(j=i+1;j<s.length+1;j++)
+                    {
+                        list_of_strings.push(s.slice(i, j));
+                    }
+                }
+                return list_of_strings;
+            }
+            document.write(combinator("Sonal"));
+            </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id ="demo"></p>
+        <script>    
+            function combinator () {
+                let s1="How are you and what are you doing";
+                arr=s1.split(' ');
+                new_arr=[];
+                for(i=0;i<arr.length;i++)
+                {
+                    if(arr[i].length==3)
+                    {
+                        new_arr.push(arr[i]);
+                    }
+                }
+                document.getElementById("demo").innerHTML =new_arr; 
+            }
+            combinator();
+        </script>
+    </body>
+</html>

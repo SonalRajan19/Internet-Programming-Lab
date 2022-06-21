@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email Validation</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            function myfunc()
+            {
+                let get = window.prompt("Enter your Email Id:");
+                let regex = /^[a-z A-Z 0-9]@[a-z].[a-z]/;
+                let test = regex.test(get);
+                if(test == false)
+                {
+                    window.alert("Invalid Mail Id. Enter the correct Mail Id");
+                }
+                else
+                {
+                    window.alert("Valid Mail Id!");
+                }
+                let get1 = window.prompt("Enter your Email Id:");
+                document.getElementById("demo").innerHTML = "Email Id:  "+ get1;
+            }
+            myfunc();
+        </script>
+    </body>
+</html>

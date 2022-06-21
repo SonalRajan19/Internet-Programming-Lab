@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function countOccurrences(str,word)
+            {
+                // split the string by spaces in a
+                let a = str.split(" ");
+
+                // search for pattern in a
+                let count = 0;
+                for (let i = 0; i < a.length; i++){
+                    // if match found increase count
+                    if (word==(a[i]))
+                        count++;
+                }
+                return count;
+            }
+            
+            // Driver code
+            let str = "The world is so big and the world in filled with land and water.";
+            let word = "world";
+            document.write("The given statement is: "+ str);
+	        document.write(" The number of '" + word + "' in the string is: "+ countOccurrences(str, word));
+        </script>
+    </head>
+    <body> 
+    </body>
+</html>
