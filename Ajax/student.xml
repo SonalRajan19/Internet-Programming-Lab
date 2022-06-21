@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<college> 
+    <student> 
+        <Roll>19CSE087</Roll> 
+        <Name>Sonal</Name> 
+        <Dept>CSE</Dept> 
+        <cgpa>8.9</cgpa> 
+    </student> 
+    <student> 
+        <Roll>19CSE066</Roll> 
+        <Name>Baruni</Name> 
+        <Dept>ECE</Dept> 
+        <cgpa>9.8</cgpa> 
+    </student> 
+    <student> 
+        <Roll>19CSE096</Roll> 
+        <Name>Aakash</Name> 
+        <Dept>CSE</Dept> 
+        <cgpa>9.4</cgpa> 
+    </student> 
+    <student> 
+        <Roll>19CSE128</Roll> 
+        <Name>Vasanth</Name> 
+        <Dept>IT</Dept> 
+        <cgpa>8.6</cgpa> 
+    </student> 
+    <student> 
+        <Roll>19CSE073</Roll> 
+        <Name>Shibani</Name> 
+        <Dept>EEE</Dept> 
+        <cgpa>8.2</cgpa> 
+    </student> 
+</college>
